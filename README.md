@@ -20,20 +20,6 @@ Extracts travel-accounting information from **PDFs and images** and writes a cle
 3. Put documents in the `input/` folder.
 4. Double-click `run_windows.bat` → result in `output/travel_documents.xlsx`.
 
-### Web UI
-
-```cmd
-python app.py
-```
-Open http://localhost:5000, upload your files, pick a mode and view/download the result. (`run_ui_windows.bat` does the same.)
-
-## Command line
-
-```cmd
-python travel_extractor.py input --mode local -o output\travel_documents.xlsx
-python travel_extractor.py documents.zip --mode local
-python travel_extractor.py receipt.jpg --mode local -o output\receipt.xlsx
-```
 
 ## Modes
 
@@ -74,10 +60,6 @@ Check `output/extraction_log.txt`. Typical causes: Python not on PATH, packages 
 
 `--mode local` keeps everything on your computer. `--mode ai` sends document content to the configured provider – use only an approved provider. The `input/` and `output/` folders are git-ignored so personal travel data is never uploaded to GitHub.
 
-## Execution
-
-See [EXECUTION.md](./EXECUTION.md) for screenshots of the tool running.
-
 ## Author
 
-Add your name, LinkedIn and email here.
+Ishan Masekar
